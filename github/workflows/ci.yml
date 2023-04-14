@@ -1,0 +1,15 @@
+name: Push Sample
+
+on:  
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Output message
+      run: echo "プッシュイベントで動くサンプル"
+
